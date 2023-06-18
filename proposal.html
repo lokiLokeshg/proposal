@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love Proposal</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e74c3c;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .proposal-image {
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+      height: auto;
+    }
+    #no1{
+        display: none;
+        margin-left: 40%;
+    }
+    #no2{
+        display: none;
+        margin-left: 60%;
+    }
+    #no3{
+        display: none;
+        margin-top: 20px;
+        margin-left: 50%;
+        text-align: center;
+    }
+    #no4{
+        display: none;
+        margin: 0 50% 20px 40%;
+    }
+    #no5{
+        display: none;
+        text-align: right;
+        padding: 10px;
+        margin-left: 50%;
+        color: rgb(236, 230, 230);
+        background-color: black;
+    }
+    #p{
+       display: none;
+       text-align: center;
+       font-size: larger;
+
+    }
+    #yes{
+        display: none;
+        color: aqua;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <p>The only impossible journey is the one you never begin .</p>
+    <p>The future belongs to those who believe in the beauty of their dreams  -- its for u lakshmi</p>
+    <img class="proposal-image" src="IMG_20220214_063549.jpg" alt="Proposal Image" height="399px" width="399px">
+    <h1> I Love You </h1>
+  </div>
+  <div style="text-align: center;width: 100%;" >
+    <h3 style="text-align: center;">
+        Accept Chasthunnava ?
+    </h3>
+    
+    <input type="button" value="yes" id="ok" onclick="ok()">
+    <input type="button" value="No" id="no" onclick="no()"> <br><br>
+    <input type="button" value="No" id="no1" onclick="no1()" > <br>
+    <input type="button" value="No" id="no2" onclick="no2()"><br><br>
+    <input type="button" value="No" id="no3" onclick="no3()"><br>
+    <input type="button" value="No" id="no4" onclick="no4()">
+    <input type="button" value="No" id="no5" onclick="no5()">
+
+
+  </div>
+  <h3 id="yes"> I love you  (: Too</h3>
+  <p id="p">its hurts me alot !!!! 
+    <br>
+    It's ok Aunty  
+  </p>
+<script> 
+    function no (){
+    let no = document.getElementById("no").style.display="none"
+    document.getElementById("no1").style.display ="block"
+    }
+    function no1 (){
+        document.getElementById("no1").style.display="none"
+    document.getElementById("no2").style.display ="block"
+       
+    }
+    function no2 (){
+        document.getElementById("no2").style.display="none"
+    document.getElementById("no3").style.display ="block"
+    }
+    function no3 (){
+        document.getElementById("no3").style.display="none"
+    document.getElementById("no4").style.display ="block"
+    }
+    function no4 (){
+        document.getElementById("no4").style.display="none"
+    document.getElementById("no5").style.display ="block"
+    }
+    function no5 (){
+        document.getElementById("no5").style.display="none"
+    document.getElementById("p").style.display ="block"
+    }
+   function ok(){
+    document.getElementById("yes").style.display="block"
+   }
+</script>
+</body>
+</html>
